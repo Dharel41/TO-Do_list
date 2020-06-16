@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="480.0" layoutY="40.0" text="DONE" />
+      <Label layoutX="270.0" layoutY="40.0" text="IN PROGRESS" />
+      <Label layoutX="80.0" layoutY="40.0" text="TO DO" />
+      <Button layoutX="216.0" layoutY="566.0" mnemonicParsing="false" onAction="#newTask" prefHeight="31.0" prefWidth="153.0" text="Add new task" />
+      <ListView fx:id="listView1" layoutY="60.0" onMouseClicked="#handleMouseClick" prefHeight="500.0" prefWidth="200.0" />
+      <ListView fx:id="listView2" layoutX="200.0" layoutY="60.0" onMouseClicked="#handleMouseClick2" prefHeight="500.0" prefWidth="200.0" />
+      <ListView fx:id="listView3" layoutX="400.0" layoutY="60.0" onMouseClicked="#handleMouseClick3" prefHeight="500.0" prefWidth="200.0" />
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+                <MenuItem mnemonicParsing="false" onAction="#open" text="Open" />
+                <MenuItem mnemonicParsing="false" onAction="#export" text="Export" />
+                <MenuItem mnemonicParsing="false" onAction="#importt" text="Import" />
+                <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Author">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
